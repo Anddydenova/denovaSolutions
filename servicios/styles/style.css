@@ -1,0 +1,337 @@
+/* ==== TIPOGRAFÍA GENERAL ==== */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #0D3B66;
+    transition: all 0.5s ease;
+    scroll-behavior: smooth;
+}
+
+.dark {
+    background-color: #000a0f;
+    color: #ffffff;
+}
+
+/* ==== HEADER ==== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    color: #fff;
+    background-color: #0D3B66;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+header.dark {
+    background-color: #02121b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #F95738;
+}
+
+/* ==== HERO ==== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0D3B66, #F95738);
+    transition: background 0.5s ease;
+}
+
+.hero.dark {
+    background: linear-gradient(135deg, #1E1E1E, #333333);
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* ==== SERVICIOS ==== */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.service {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.service i {
+  font-size: 2.5rem;
+  color: #0D3B66;
+  margin-bottom: 15px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.service h3 {
+  margin: 10px 0;
+}
+
+.service p {
+  font-size: 0.95rem;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.service:hover i {
+  color: #F95738;
+  transform: scale(1.2);
+}
+
+/* Modo oscuro */
+.service.dark {
+  background-color: #1E1E1E;
+  box-shadow: 0 5px 15px rgba(83, 82, 82, 0.495);
+}
+
+.service.dark i {
+  color: #ffffff;
+}
+
+.service.dark:hover i {
+  color: #F9A03F;
+}
+
+
+/* ==== PORTAFOLIO ==== */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px 60px 20px;
+}
+
+.project {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.project.dark {
+    background-color: #1E1E1E;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.05);
+}
+
+/* ==== CONTACTO ==== */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.contact input.dark, .contact textarea.dark {
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: #fff;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #0D3B66;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+    background-color: #F95738;
+    transform: scale(1.05);
+}
+
+.contact button.dark {
+    background-color: #F95738;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+    background-color: #0D3B66;
+    transition: all 0.5s ease;
+}
+
+footer.dark {
+    background-color: #02121b;
+}
+
+footer .socials {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+footer .socials a:hover {
+    background-color: #F95738;
+    transform: scale(1.2);
+    color: #fff;
+}
+footer .socials {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .socials a img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* círculo */
+    object-fit: cover;  /* asegura que la imagen se recorte bien */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer .socials a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+
+
+/* Opcional: cambio de colores en modo oscuro */
+footer.dark .socials a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer.dark .socials a:hover {
+    background-color: #F9A03F;
+}
+
+
+
+/* ==== SECCIONES VISIBLES ==== */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==== BOTÓN MODO OSCURO ==== */
+#toggle-dark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F95738;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#toggle-dark:hover {
+    background-color: #D1442A;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+    .services, .portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+}
